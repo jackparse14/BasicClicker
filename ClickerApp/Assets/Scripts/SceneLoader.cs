@@ -5,6 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public void LoadInventoryScene()
+    {
+        SceneManager.LoadScene("InventoryScene");
+    }
+    public void LoadShopScene()
+    {
+        SceneManager.LoadScene("ShopScene");
+    }
+    public void LoadOptionsScene() {
+        SceneManager.LoadScene("OptionsScene");
+    }
     public void LoadHomeScene() {
         SceneManager.LoadScene("HomeScene");
     }

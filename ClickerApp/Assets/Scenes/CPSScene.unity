@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &313172657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1151692991910256532, guid: 01aafffac76cbc74fb0c28b6b15ce1d0, type: 3}
+  m_PrefabInstance: {fileID: 1291802107}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6562e47f4ae6195439dded865d36ee17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &332448738 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1796139914141428475, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
@@ -326,6 +337,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: '+100 CPS / Cost: '
       objectReference: {fileID: 0}
+    - target: {fileID: 8393960302616868406, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 255
+      objectReference: {fileID: 0}
     - target: {fileID: 8393960302616868407, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
       propertyPath: m_Text
       value: 'CPS Upgrades:'
@@ -386,13 +401,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1405747695711919416, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
-      propertyPath: cpsUpgrade3Cost
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1405747695711919416, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
-      propertyPath: cpsUpgrade4Cost
-      value: 40
+    - target: {fileID: 6365067116788515623, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 195
       objectReference: {fileID: 0}
     - target: {fileID: 6551178638015930956, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
       propertyPath: m_Name
@@ -441,6 +452,10 @@ PrefabInstance:
     - target: {fileID: 6551178638015930957, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787239640156650792, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 142.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
@@ -539,6 +554,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7280850227132823890, guid: b94270cc106b55246b199297fd8351c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 313172657}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94270cc106b55246b199297fd8351c8, type: 3}
 --- !u!114 &1225222486 stripped

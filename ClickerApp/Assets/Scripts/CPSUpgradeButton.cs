@@ -51,6 +51,7 @@ public class CPSUpgradeButton : UpgradeButton
         {
             IncreaseCPS();
             UpdateScore();
+            gameStatus.UpdateCPSText();
             IncreaseCost();
             UpdateCost();
             SaveUpgradeCost();

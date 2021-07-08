@@ -12,7 +12,7 @@ public class UpgradeButton : MonoBehaviour
     protected void UpdateScore()
     {
         gameStatus.score -= upgradeCost;
-        gameStatus.UpdateScore();
+        gameStatus.UpdateScoreText();
     }
     protected void IncreaseCost()
     {

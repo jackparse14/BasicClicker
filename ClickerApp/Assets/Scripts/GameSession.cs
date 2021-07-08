@@ -9,8 +9,9 @@ public class GameSession : MonoBehaviour
     //  Score Variables
     public int score;
     public Text scoreText;
+    public Text cpsText;
     //  Click Upgrade Variables
-    public int clickAmount = 1;
+    public int clickAmount;
     public int clickUpgrade1Cost;
     public int clickUpgrade2Cost;
     public int clickUpgrade3Cost;
@@ -21,8 +22,16 @@ public class GameSession : MonoBehaviour
     public int cpsUpgrade2Cost;
     public int cpsUpgrade3Cost;
     public int cpsUpgrade4Cost;
-    public void UpdateScore() {
+    public void UpdateScoreText() {
         scoreText.text = score.ToString();
+    }
+    public void UpdateCPSText() {
+        if (cps == 1) {
+            cpsText.text = cps.ToString() + " Click Per Second";
+        } else {
+            cpsText.text = cps.ToString() + " Clicks Per Second";
+        }
+        
     }
     private void Update() {
         if (oneSecPassed) {
@@ -33,7 +42,7 @@ public class GameSession : MonoBehaviour
     IEnumerator AddCPS() {
         yield return new WaitForSeconds(1);
         score += cps;
-        UpdateScore();
+        UpdateScoreText();
         oneSecPassed = true;
     }
 
