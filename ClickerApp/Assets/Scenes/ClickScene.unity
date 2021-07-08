@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 485001347}
   - component: {fileID: 485001346}
   - component: {fileID: 485001345}
+  - component: {fileID: 485001348}
   m_Layer: 5
   m_Name: ClickButton1
   m_TagString: Untagged
@@ -421,7 +422,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 485001346}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 485001348}
+        m_TargetAssemblyTypeName: ClickUpgradeButton, Assembly-CSharp
+        m_MethodName: HandleClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &485001346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,6 +473,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485001343}
   m_CullTransparentMesh: 1
+--- !u!114 &485001348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485001343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4646a45104d2ad34cb43e88b17f1a511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeAmount: 1
+  costText: {fileID: 1143557938}
+  buttonIndex: 1
 --- !u!1 &699669052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1054,7 @@ GameObject:
   - component: {fileID: 1576084289}
   - component: {fileID: 1576084288}
   - component: {fileID: 1576084287}
+  - component: {fileID: 1576084290}
   m_Layer: 5
   m_Name: ClickButton2
   m_TagString: Untagged
@@ -1097,7 +1126,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1576084288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1576084290}
+        m_TargetAssemblyTypeName: ClickUpgradeButton, Assembly-CSharp
+        m_MethodName: HandleClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1576084288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,6 +1177,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576084285}
   m_CullTransparentMesh: 1
+--- !u!114 &1576084290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576084285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4646a45104d2ad34cb43e88b17f1a511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeAmount: 2
+  costText: {fileID: 390027757}
+  buttonIndex: 2
 --- !u!114 &6250615162613848000
 MonoBehaviour:
   m_ObjectHideFlags: 0
