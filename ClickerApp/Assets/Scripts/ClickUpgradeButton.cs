@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ClickUpgradeButton : MonoBehaviour
+public class ClickUpgradeButton : UpgradeButton
 {
-    private int upgradeCost;
     public int upgradeAmount;
-    public Text costText;
-    public int buttonIndex;
-    GameSession gameStatus;
-    void Start() {
+    private void Start()
+    {
         gameStatus = FindObjectOfType<GameSession>();
         ChooseUpgradeCost();
         UpdateCost();
     }
-    
+
     private void ChooseUpgradeCost() {
         switch (buttonIndex) {
             case 1:
@@ -42,20 +39,11 @@ public class ClickUpgradeButton : MonoBehaviour
             UpdateScore();
             IncreaseCost();
             UpdateCost();
+            SaveUpgradeCost();
         }
     }
     private void IncreaseClickAmount() {
         gameStatus.clickAmount += upgradeAmount;
     }
-    private void UpdateScore() {
-        gameStatus.score -= upgradeCost;
-        gameStatus.UpdateScore();
-    }
-    private void IncreaseCost() {
-        upgradeCost *= 5;
-    }
-    private void UpdateCost(){
-        costText.text = upgradeCost.ToString();
-        SaveUpgradeCost();
-    }
+    
 }

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CPSUpgradeButton : MonoBehaviour
+public class CPSUpgradeButton : UpgradeButton
 {
-    private int upgradeCost;
     public int cpsUpgradeAmount;
-    public Text costText;
-    public int buttonIndex;
-    GameSession gameStatus;
-    void Start() {
+    
+    private void Start()
+    {
         gameStatus = FindObjectOfType<GameSession>();
         ChooseUpgradeCost();
         UpdateCost();
@@ -43,20 +41,10 @@ public class CPSUpgradeButton : MonoBehaviour
             UpdateScore();
             IncreaseCost();
             UpdateCost();
+            SaveUpgradeCost();
         }
     }
     private void IncreaseCPS() {
         gameStatus.cps += cpsUpgradeAmount;
-    }
-    private void UpdateScore() {
-        gameStatus.score -= upgradeCost;
-        gameStatus.UpdateScore();
-    }
-    private void IncreaseCost() {
-        upgradeCost *= 5;
-    }
-    private void UpdateCost() {
-        costText.text = upgradeCost.ToString();
-        SaveUpgradeCost();
     }
 }

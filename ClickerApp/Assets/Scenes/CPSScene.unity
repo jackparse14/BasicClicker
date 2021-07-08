@@ -513,9 +513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851614ed50e30dd42b0187a1685d0679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cpsUpgradeAmount: 2
   costText: {fileID: 1546050355}
   buttonIndex: 2
+  cpsUpgradeAmount: 2
 --- !u!1 &1387742543
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +684,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851614ed50e30dd42b0187a1685d0679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cpsUpgradeAmount: 1
   costText: {fileID: 1225222486}
   buttonIndex: 1
+  cpsUpgradeAmount: 1
