@@ -224,7 +224,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  cps: 0
   scoreText: {fileID: 6025850957380818156}
   clickAmount: 1
-  clickUpgrade1Cost: 10
-  clickUpgrade2Cost: 20
+  clickUpgrade1Cost: 20
+  clickUpgrade2Cost: 30
+  cpsUpgrade1Cost: 10
+  cpsUpgrade2Cost: 20

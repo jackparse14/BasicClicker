@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ClickUpgradeButton : MonoBehaviour
+public class CPSUpgradeButton : MonoBehaviour
 {
     private int upgradeCost;
-    public int upgradeAmount;
+    public int cpsUpgradeAmount;
     public Text costText;
     public int buttonIndex;
     GameSession gameStatus;
@@ -15,37 +15,38 @@ public class ClickUpgradeButton : MonoBehaviour
         ChooseUpgradeCost();
         UpdateCost();
     }
-    
     private void ChooseUpgradeCost() {
         switch (buttonIndex) {
             case 1:
-                upgradeCost = gameStatus.clickUpgrade1Cost;
+                upgradeCost = gameStatus.cpsUpgrade1Cost;
                 break;
             case 2:
-                upgradeCost = gameStatus.clickUpgrade2Cost;
+                upgradeCost = gameStatus.cpsUpgrade2Cost;
                 break;
         }
     }
     private void SaveUpgradeCost() {
         switch (buttonIndex) {
             case 1:
-                gameStatus.clickUpgrade1Cost = upgradeCost;
+                gameStatus.cpsUpgrade1Cost = upgradeCost;
                 break;
             case 2:
-                gameStatus.clickUpgrade2Cost = upgradeCost;
+                gameStatus.cpsUpgrade2Cost = upgradeCost;
                 break;
         }
     }
-    public void HandleClick() {
-        if (gameStatus.score >= upgradeCost) {
-            IncreaseClickAmount();
+    public void HandleClick()
+    {
+        if (gameStatus.score >= upgradeCost)
+        {
+            IncreaseCPS();
             UpdateScore();
             IncreaseCost();
             UpdateCost();
         }
     }
-    private void IncreaseClickAmount() {
-        gameStatus.clickAmount += upgradeAmount;
+    private void IncreaseCPS() {
+        gameStatus.cps += cpsUpgradeAmount;
     }
     private void UpdateScore() {
         gameStatus.score -= upgradeCost;
@@ -54,7 +55,7 @@ public class ClickUpgradeButton : MonoBehaviour
     private void IncreaseCost() {
         upgradeCost *= 5;
     }
-    private void UpdateCost(){
+    private void UpdateCost() {
         costText.text = upgradeCost.ToString();
         SaveUpgradeCost();
     }

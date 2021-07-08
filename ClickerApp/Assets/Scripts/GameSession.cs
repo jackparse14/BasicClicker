@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
+    private bool oneSecPassed = true;
     //  Score Variables
     public int score;
     public Text scoreText;
@@ -13,9 +14,23 @@ public class GameSession : MonoBehaviour
     public int clickUpgrade1Cost;
     public int clickUpgrade2Cost;
     // CPS Upgrade Variables
-    public void UpdateScore()
-    {
+    public int cps;
+    public int cpsUpgrade1Cost;
+    public int cpsUpgrade2Cost;
+    public void UpdateScore() {
         scoreText.text = score.ToString();
+    }
+    private void Update() {
+        if (oneSecPassed) {
+            oneSecPassed = false;
+            StartCoroutine(AddCPS());
+        }
+    }
+    IEnumerator AddCPS() {
+        yield return new WaitForSeconds(1);
+        score += cps;
+        UpdateScore();
+        oneSecPassed = true;
     }
 
     private void Awake() {
