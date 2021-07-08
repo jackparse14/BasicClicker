@@ -123,6 +123,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &332448738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1796139914141428475, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+  m_PrefabInstance: {fileID: 462920582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &332448740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332448738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851614ed50e30dd42b0187a1685d0679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costText: {fileID: 1996382676}
+  buttonIndex: 4
+  cpsUpgradeAmount: 100
 --- !u!1001 &462920582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +150,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1158094981620435828, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_Name
+      value: CPSText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796139914141428475, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_Name
+      value: CPSButton4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050720028654713378, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: upgradeAmount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2505113220391971190, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -266,14 +298,87 @@ PrefabInstance:
       propertyPath: m_Name
       value: CPSText
       objectReference: {fileID: 0}
+    - target: {fileID: 3281267645020292133, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_Name
+      value: CPSButton3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576973156160610684, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 462920585}
+    - target: {fileID: 3576973156160610684, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HandleClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576973156160610684, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CPSUpgradeButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917282766993864730, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_Name
+      value: CPSText
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429378982941318100, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_Text
+      value: '+10 CPS / Cost: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6390263712181439590, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_Text
+      value: '+100 CPS / Cost: '
+      objectReference: {fileID: 0}
     - target: {fileID: 8393960302616868407, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
       propertyPath: m_Text
       value: 'CPS Upgrades:'
       objectReference: {fileID: 0}
+    - target: {fileID: 8902000128829998974, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 332448740}
+    - target: {fileID: 8902000128829998974, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HandleClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902000128829998974, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CPSUpgradeButton, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2505113220391971187, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
     - {fileID: 2505113221447320245, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+    - {fileID: 6888083696497204276, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+    - {fileID: 2050720028654713378, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+--- !u!114 &462920583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4776084042523679591, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+  m_PrefabInstance: {fileID: 462920582}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &462920584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3281267645020292133, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+  m_PrefabInstance: {fileID: 462920582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &462920585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462920584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851614ed50e30dd42b0187a1685d0679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  costText: {fileID: 462920583}
+  buttonIndex: 3
+  cpsUpgradeAmount: 10
 --- !u!1001 &774229622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -281,6 +386,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1405747695711919416, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
+      propertyPath: cpsUpgrade3Cost
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405747695711919416, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
+      propertyPath: cpsUpgrade4Cost
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 6551178638015930956, guid: 8f10edd4877cb0947aca123a6b85f235, type: 3}
       propertyPath: m_Name
       value: GameSession
@@ -687,3 +800,14 @@ MonoBehaviour:
   costText: {fileID: 1225222486}
   buttonIndex: 1
   cpsUpgradeAmount: 1
+--- !u!114 &1996382676 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5178743524496289196, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+  m_PrefabInstance: {fileID: 462920582}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

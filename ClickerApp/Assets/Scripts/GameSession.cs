@@ -13,10 +13,14 @@ public class GameSession : MonoBehaviour
     public int clickAmount = 1;
     public int clickUpgrade1Cost;
     public int clickUpgrade2Cost;
+    public int clickUpgrade3Cost;
+    public int clickUpgrade4Cost;
     // CPS Upgrade Variables
     public int cps;
     public int cpsUpgrade1Cost;
     public int cpsUpgrade2Cost;
+    public int cpsUpgrade3Cost;
+    public int cpsUpgrade4Cost;
     public void UpdateScore() {
         scoreText.text = score.ToString();
     }

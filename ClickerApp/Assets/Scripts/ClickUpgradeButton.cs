@@ -21,6 +21,12 @@ public class ClickUpgradeButton : UpgradeButton
             case 2:
                 upgradeCost = gameStatus.clickUpgrade2Cost;
                 break;
+            case 3:
+                upgradeCost = gameStatus.clickUpgrade3Cost;
+                break;
+            case 4:
+                upgradeCost = gameStatus.clickUpgrade4Cost;
+                break;
         }
     }
     private void SaveUpgradeCost() {
@@ -30,6 +36,12 @@ public class ClickUpgradeButton : UpgradeButton
                 break;
             case 2:
                 gameStatus.clickUpgrade2Cost = upgradeCost;
+                break;
+            case 3:
+                gameStatus.clickUpgrade3Cost = upgradeCost;
+                break;
+            case 4:
+                gameStatus.clickUpgrade4Cost = upgradeCost;
                 break;
         }
     }

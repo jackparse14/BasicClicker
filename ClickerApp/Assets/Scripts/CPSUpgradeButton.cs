@@ -21,6 +21,12 @@ public class CPSUpgradeButton : UpgradeButton
             case 2:
                 upgradeCost = gameStatus.cpsUpgrade2Cost;
                 break;
+            case 3:
+                upgradeCost = gameStatus.cpsUpgrade3Cost;
+                break;
+            case 4:
+                upgradeCost = gameStatus.cpsUpgrade4Cost;
+                break;
         }
     }
     private void SaveUpgradeCost() {
@@ -30,6 +36,12 @@ public class CPSUpgradeButton : UpgradeButton
                 break;
             case 2:
                 gameStatus.cpsUpgrade2Cost = upgradeCost;
+                break;
+            case 3:
+                gameStatus.cpsUpgrade3Cost = upgradeCost;
+                break;
+            case 4:
+                gameStatus.cpsUpgrade4Cost = upgradeCost;
                 break;
         }
     }

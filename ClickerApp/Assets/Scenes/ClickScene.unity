@@ -569,5 +569,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpgradesCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4429378982941318100, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_Text
+      value: '+10 Click / Cost: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6390263712181439590, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
+      propertyPath: m_Text
+      value: '+25 Click / Cost: '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f1d4a37390f7b4ab2730ffb0afa575, type: 3}
